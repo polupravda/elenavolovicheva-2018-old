@@ -29,6 +29,10 @@ body {
 	background-color: var(--color-bg);
 }
 
+.scrollable {
+	overflow-y: scroll;
+}
+
 p {
 	font-size: 0.9em;
 	line-height: 1.5em;
@@ -48,10 +52,15 @@ iframe {
 
 .banner-container {
 	display: flex;
+	flex-direction: column;
 }
 
-.right-column {
+.column {
 	margin-left: 5px;
+}
+
+.flex {
+	display: flex;
 }
 
 .label {
@@ -141,7 +150,7 @@ a:focus {
 
 main {
 	position: relative;
-	height: 200vh;
+	height: 100vh;
 }
 
 .my_pic-container {
@@ -192,6 +201,7 @@ main {
 
 .title-wrap {
 	padding: 2rem 0;
+	margin-top: 5vh;
 }
 
 .side {
@@ -362,7 +372,7 @@ main {
 
 @media screen and (min-width: 55em) {
 	.js main {
-		height: 100vh;
+		/* height: 100vh; */
 		overflow: hidden;
 	}
 	.message {
@@ -391,6 +401,64 @@ main {
 		grid-column-gap: 5vw;
 		pointer-events: none;
 		overflow: hidden;
+	}
+
+	.grid-scrollable {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 16vw 16vw 16vw 20vw 12vw;
+		grid-column-gap: 5vw;
+		pointer-events: none;
+		overflow: hidden;
+	}
+
+	.cv-container {
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+	}
+	.cv-block-container {
+		display: flex;
+		margin-bottom: 40px;
+	}
+	.cv-block-left {
+		flex-grow: 1;
+		max-width: 6vw;
+		margin-right: 25px;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.cv-block-right {
+		flex-grow: 2;
+		max-width: 45vw;
+	}
+	.cv-date {
+		font-size: 1em;
+		font-weight: 400;
+	}
+	.company-name {
+		font-size: 1.2em;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+	.vertical-line {
+		width: 1px;
+		height: 15px;
+		margin: 3px auto;
+		background-color: var(--color-text);
+	}
+	.job-description {
+		padding-left: 15px;
+	}
+	.job-description li {
+		font-size: 0.9em;
+		line-height: 1.5em;
+		margin-top: 5px;
 	}
 	.grid--outer {
 		padding: 0;
@@ -456,7 +524,11 @@ main {
 		display: inline-block;
 		text-align: left;
 		z-index: 1;
-		}
+	}
+
+	.space-30 {
+		height: 30px;
+	}
 
 	.zero-item {
 		grid-area: 1 / 2 / 1 / 6;
