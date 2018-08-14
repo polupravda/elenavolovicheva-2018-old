@@ -1084,4 +1084,15 @@ main {
 		z-index: -10;
 	}
 
+	.flex-wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.gallery-item {
+		width: 100%;
+		margin: 5vh 2vw;
+		height: 100%;
+	}
+
 }
