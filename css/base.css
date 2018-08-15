@@ -624,6 +624,7 @@ display: none;
 		z-index: -100;
 		background-repeat: no-repeat;
 		background-position-y: top;
+		background-position-x: right;
 		margin-left: 0;
 	}
 
