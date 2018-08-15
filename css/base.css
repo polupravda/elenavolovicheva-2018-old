@@ -308,12 +308,6 @@ main {
 	height: 100vh;
 }
 
-.my_pic-container {
-	display: flex;
-	justify-content: flex-end;
-	margin-top: -50px;
-}
-
 .grid--thumbs {
 	display: none;
 }
@@ -569,6 +563,15 @@ main {
 display: none;
 }
 
+.my_pic-container {
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    margin-left: -90px;
+    margin-top: -130px;
+    height: 45vh;
+}
+
 @media screen and (min-width: 55em) {
 	.js main {
 		/* height: 100vh; */
@@ -619,6 +622,9 @@ display: none;
 		position: absolute;
 		background-size: cover;
 		z-index: -100;
+		background-repeat: no-repeat;
+		background-position-y: top;
+		margin-left: 0;
 	}
 
 	.menu-item {
