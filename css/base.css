@@ -35,6 +35,7 @@ body {
 .fullview__item-titlewrap,
 .showcase-container,
 .first-view,
+.fullview__item,
 .fullview__item div {
 	max-width: 100vw;
 	overflow: hidden;
@@ -747,6 +748,28 @@ main {
 	padding-bottom: 20px;
 }
 
+.contact-label {
+	color: var(--color-description-full);
+}
+
+.credits {
+	font-size: 0.5rem;
+	max-width: 84vw;
+	margin-bottom: -40px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: calc(100vh - 269px);}
+
+.contact-details {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
 @media screen and (min-width: 55em) {
 	.js main {
 		/* height: 100vh; */
@@ -1101,7 +1124,7 @@ main {
 	}
 	.fullview__title {
 		display: block;
-		position: absolute;
+		position: fixed;
 		margin: 2vw;
 		line-height: 1;
 		bottom: 0;
@@ -1226,6 +1249,7 @@ main {
 		z-index: 1;
 		padding: 0 8vw;
 		border: none;
+		overflow-x: hidden;
 	}
 
 	#b728x90,
@@ -1318,6 +1342,7 @@ main {
 		/* box-shadow: 0 0 21px 0 rgba(0,0,0,.1); */
 		max-width: 60vw;
 		align-self: center;
+		overflow: hidden;
 	}
 
 	.dash {
@@ -1353,6 +1378,7 @@ main {
 		align-self: flex-start;
 		margin-left: 5vw;
 		margin-top: 5vh;
+		overflow: hidden;
 	}
 	
 	.mobile-demo {
@@ -1388,4 +1414,30 @@ main {
 		background-position: 0% 0%;
 	}
 
+	.footer-border-top {
+		display: none;
+	}
+
+	.contact-label {
+		color: var(--color-description-full);
+	}
+
+	.credits {
+		font-size: 0.8vw;
+		max-width: 60vw;
+		margin-bottom: -2vh;
+	}
+
+	.contact-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 85vh;
+	}
+
+	.contact-details {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
 }
