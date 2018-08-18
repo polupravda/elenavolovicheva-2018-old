@@ -256,4 +256,5 @@
     // mousemove on the thumbs.
     let allowTilt = true;
     new Grid();
+    
 }
