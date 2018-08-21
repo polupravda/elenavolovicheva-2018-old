@@ -10,8 +10,8 @@
 	/>
 	<meta name="author" content="Elena Volovicheva" />
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this page in a modern browser that supports CSS Variables.");</script>
 </head>
 
@@ -19,45 +19,46 @@
 	<script src="navigation.js"></script>
 	<section class="scrollable">
 		<div class="message">View on a larger screen is recommended</div>
-		<div class="grid-scrollable grid--outer">
-			<div class="title-wrap contact-container">
-				<div class="contact-details">
+		<!-- <div class="grid-scrollable grid--outer pic-as-bg" style="background-image: url(img/Elena-pic-3.jpg)"> -->
+		<div class="grid-scrollable grid--outer pic-as-bg">
+			<div class="title-wrap">
 				<h2 class="title">Elena Volovicheva</h2>
 				<span class="profession">designer / artist / frontend-developer</span>
 				<span class="subtitle">portfolio</span>
 				<span class="year">2018</span>
-				<div class="fullview__details-container">
-					<h3 class="fullview__details">contact</h3>
-					<ul class="fullview__year-list">
-						<li>
-							<span class="contact-label">Phone:</span> +49 176 47110458</li>
-						<li>
-							<span class="contact-label">E-mail:</span><a href="mailto:elena.volovicheva@gmail.com"> elena.volovicheva@gmail.com</a>
-						</li>
-						<li>
-								<span class="contact-label">LinkedIn:</span><a href="www.linkedin.com/in/volovicheva/"> linkedin.com/in/volovicheva</a>
-						</li>
-					</ul>
+				<div class="my_story-wrap">
+					<p>Hi, I am Elena and I am a Senior Visual Designer at Fonpit, based in Berlin. In 2013 I moved from Ukraine to Germany
+						for work. How can visualisation help you in developing your idea? Why is it even important to visualise an idea and
+						what does it mean? Firstly, there are 2 main phases where you will need a visualisation. Initially for yourself. Secondly,
+						to communicate your idea to investors, partners or customers. In this talk I will share some techniques, which we designers
+						use when creating our works.
+					</p>
 				</div>
-			</div>
-				<div class="credits">
-					<p><span class="contact-label credits">Credits, Contributors & Copyright Co-owners:</span> Photo on the home page – Ira Efremova (<a href="https://www.iraefremova.com/">www.iraefremova.com</a>); Full Image Reveal Effect – tympanus.net; Marketing Campaign was created for <a href="https://www.orderbird.com">orderbird.com</a> together with my creative team: Beate Lang & Benny Adler; Dance Network – created for Aleksey Razbakov (<a href="https://www.razbakov.com">razbakov.com</a>).</p>
+				<div class="button">
+					<a href="works.html" class="btn" id="spashlink">see my works</a>
 				</div>
+				<div><h3 class="fullview__title-mobile">Made by Elena Volovicheva</h3></div>
 			</div>
+			<h3 class="fullview__title">Made by Elena Volovicheva</h3>
 		</div>
-		<div class="mobile-footer">
-				<div class="footer-border-top"></div>
-				<div class="footer-p">
-					<p>Made by Elena Volovicheva</p>
-				</div>
-			</div>
-		<h3 class="fullview__title">Made by Elena Volovicheva</h3>
+		<div class="my_pic-container" style="background-image: url(img/Elena-pic-cut.jpg)"></div>
 	</section>
 	<script src="js/imagesloaded.pkgd.min.js"></script>
 	<script src="js/TweenMax.min.js"></script>
 	<script src="js/demo.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/modernizr.custom.js"></script>
+	<script>
+		$(function() {
+			$('#spashlink').on('click', function(e) {
+				e.preventDefault();
+				var self = this;
+				setTimeout(function() {
+					window.location.href = self.href;
+				}, 1000);
+			});
+		});
+	</script>
 </body>
 
 </html>
