@@ -974,14 +974,21 @@ main {
 
 .content__title-container {
 	margin-top: 0;
+	margin-bottom: 1vh;
 	align-self: flex-end;
 }
 
 .my_story-wrap p {
-	font-size: 1.9em;
-	line-height: 1.2em;
-	width: 50vw;
+	font-family: 'Oswald';
+	font-size: 16vw;
+	line-height: 1em;
+	margin: auto;
+	width: 90vw;
     color: #000000;
+}
+
+.space-25 {
+	height: 25px;
 }
 
 @media screen and (min-width: 55em) {
@@ -1378,16 +1385,14 @@ main {
 		padding-left: 0;
 		margin-top: 0.7vw;
 		max-width: 360px;
-		font-size: 1.2rem;
+		font-size: 0.9rem;
+		line-height: 0.8rem;
+		list-style-type: none;
 	}
 	.fullview__year-list ul {
 		list-style-type: none;
 	}
-	.fullview__year-list li {
-		line-height: 1.2rem;
-		list-style-type: none;
-	}
-	
+
 	.fullview__item {
 		display: grid;
 		position: absolute;
@@ -1402,7 +1407,7 @@ main {
 		margin: 0;
 	}
 	.fullview__item-number {
-		font-size: 2rem;
+		font-size: 1rem;
 		align-self: start;
 		background: none;
 		padding: 0;
@@ -1424,7 +1429,7 @@ main {
 
 	.fullview__item-description,
 	.profession {
-		font-size: 1.1rem;
+		font-size: 1rem;
 		max-width: 360px;
 		line-height: 1.8rem;
 		margin-top: 2px;
@@ -1432,7 +1437,7 @@ main {
 
 	.subtitle,
 	.year {
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 		color: var(--color-description-full);
 	}
 
@@ -1733,7 +1738,7 @@ main {
 	}
 
 	.page-nav a {
-		font-size: 2rem;
+		font-size: 1.2rem;
 	}
 
 	.content .pieces {
@@ -1754,8 +1759,9 @@ main {
 	}
 
 	.my_story-wrap p {
-		font-size: 3.4em;
-		line-height: 1.1em;
+		font-family: 'Oswald';
+		font-size: 4.4em;
+		line-height: 1em;
 		width: 50vw;
 		color: #000000;
 		margin: 0;
