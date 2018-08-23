@@ -12,8 +12,8 @@ document.write(
     <span class="navicon"></span>\
 </label>\
 <div class="grid-scrollable menu">\
-    <a href="index.html" class="menu-item zero-item">Home</a>\
-    <a href="works.html" class="menu-item first-item">Works</a>\
-    <a href="cv.html" class="menu-item second-item">Curriculum Vitae</a>\
-    <a href="contact.html" class="menu-item last-item">Contact</a></div></div>'
+    <a href="index.html" class="menu-item zero-item">home</a>\
+    <a href="works.html" class="menu-item first-item">works</a>\
+    <a href="cv.html" class="menu-item second-item">curriculum Vitae</a>\
+    <a href="contact.html" class="menu-item last-item">contact</a></div></div>'
 );
