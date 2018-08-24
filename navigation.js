@@ -14,6 +14,6 @@ document.write(
 <div class="grid-scrollable menu">\
     <a href="index.html" class="menu-item zero-item">home</a>\
     <a href="works.html" class="menu-item first-item">works</a>\
-    <a href="cv.html" class="menu-item second-item">curriculum Vitae</a>\
+    <a href="cv.html" class="menu-item second-item">curriculum vitae</a>\
     <a href="contact.html" class="menu-item last-item">contact</a></div></div>'
 );
