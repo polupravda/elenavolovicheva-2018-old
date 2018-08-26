@@ -32,11 +32,6 @@ body {
 	--transition: all 0.8s ease;
 }
 
-/* h1,
-h2 {
-	font-family: 'Oswald', sans-serif;
-} */
-
 .fullview__item-titlewrap,
 .showcase-container,
 .first-view,
@@ -53,6 +48,7 @@ h2 {
 		background-color: #ffffff; 
 		border-bottom: 1px solid var(--color-lines);
 		z-index: 100;
+      	box-shadow: 0 0 21px 0 rgba(0,0,0,.1);
 }
 
 /* header */
@@ -434,7 +430,7 @@ a:active {
 }
 
 .message {
-	margin-top: 65px;
+	margin-top: 59px;
 	position: relative;
 	z-index: 1;
 	padding: 1rem;
@@ -740,6 +736,10 @@ main {
 
 .img-full-width {
 	display: none;
+}
+
+.img-full-width-top {
+	width: 100vw;
 }
 
 .my_pic-container {
@@ -1088,7 +1088,20 @@ main {
   .grid__toggle-text {
 	  font-size: 1rem;
   }
-  
+
+  .img-full-width-container {
+	margin-top: -10vh;
+    margin-bottom: 10vh;
+  }
+
+  .img-full-width-top-container {
+	margin-top: -10vh;
+    margin-bottom: 5vh;
+  }
+
+  #nav {
+	box-shadow: none;
+}
 
 @media screen and (min-width: 55em) {
 	.js main {
@@ -1661,6 +1674,15 @@ main {
 		overflow: visible;
 	}
 
+	.img-full-width-top-container {
+		margin-top: -11vh;
+		margin-bottom: 10vh;
+		width: 90vw;
+		margin-left: -11vw;
+		z-index: -10;
+		overflow: visible;
+	}
+
 	.flex-wrap {
 		display: flex;
 		flex-wrap: wrap;
@@ -1797,9 +1819,9 @@ main {
 		margin-left: 0;
 	}
 
-	.projects-item-counter {
+	/* .projects-item-counter {
 		height: 8vh;
-	}
+	} */
 
 	.content {
 		--pieces-height: 90vh;
