@@ -1555,7 +1555,7 @@ main {
 	.subtitle,
 	.year {
 		font-size: 0.9rem;
-		color: var(--color-description-full);
+		/* color: var(--color-description-full); */
 	}
 
 	.fullview,
