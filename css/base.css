@@ -1168,7 +1168,7 @@ main {
 	}
 
 	.menu-item {
-		margin: 1.5vw 1.5vw 0 -20px;
+		margin: 16px 1.5vw 0 -20px;
 		pointer-events: auto;
 		display: inline-block;
 		text-align: left;
